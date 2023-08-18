@@ -6,7 +6,11 @@ group = 'hexlet.code'
 version = '1.0-SNAPSHOT'
 
 compileJava {
-    options.release = 20
+    options.release = 17
+}
+
+run {
+    standardInput = System.in
 }
 
 repositories {
