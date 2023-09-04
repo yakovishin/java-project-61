@@ -2,19 +2,14 @@ package hexlet.code;
 
 import static hexlet.code.Engine.RANDOM;
 import static hexlet.code.Game.game;
-import static hexlet.code.StringUtils.CORRECT;
-import static hexlet.code.StringUtils.PATTERN_CONGRATULATION;
+import static hexlet.code.Game.isPlaying;
 
 public class Calc {
 
     public static void playCalc() {
         System.out.println("What is the result of the expression?");
-        var winCount = 0;
-        while (isCalc()) {
-            System.out.println(CORRECT);
-            winCount++;
-            if (winCount == 3) {
-                System.out.printf(PATTERN_CONGRATULATION, Cli.getName());
+        while (true) {
+            if (!isPlaying(isCalc())) {
                 break;
             }
         }
