@@ -10,11 +10,11 @@ public class Even {
 
     public static void playEvenNumber() {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-        while (true) {
-            if (!isPlaying(isEvenNumber())) {
-                break;
-            }
+        var playing = true;
+        do {
+            playing = isEvenNumber();
         }
+        while (isPlaying(playing));
     }
     private static boolean isEvenNumber() {
         var maxBound = 100;

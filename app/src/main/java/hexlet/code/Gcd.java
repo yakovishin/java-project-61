@@ -8,11 +8,11 @@ public class Gcd {
 
     public static void playGcd() {
         System.out.println("Find the greatest common divisor of given numbers.");
-        while (true) {
-            if (!isPlaying(isGcd())) {
-                break;
-            }
+        var playing = true;
+        do {
+            playing = isGcd();
         }
+        while (isPlaying(playing));
     }
 
     private static boolean isGcd() {

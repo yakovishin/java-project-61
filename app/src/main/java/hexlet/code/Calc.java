@@ -8,11 +8,11 @@ public class Calc {
 
     public static void playCalc() {
         System.out.println("What is the result of the expression?");
-        while (true) {
-            if (!isPlaying(isCalc())) {
-                break;
-            }
+        var playing = true;
+        do {
+            playing = isCalc();
         }
+        while (isPlaying(playing));
     }
 
     private static boolean isCalc() {
