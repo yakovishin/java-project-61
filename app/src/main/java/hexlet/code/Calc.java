@@ -16,11 +16,11 @@ public class Calc {
     }
 
     private static boolean isCalc() {
-        var boundOfRandomNumber = 10;
+        final var boundOfRandomNumber = 10;
         var firstNumber = RANDOM.nextInt(boundOfRandomNumber);
         var secondNumber = RANDOM.nextInt(boundOfRandomNumber);
         var leastBoundOperation = 1;
-        var highNotIncludedBoundOperation = 4;
+        final var highNotIncludedBoundOperation = 4;
         var operation = RANDOM.nextInt(leastBoundOperation, highNotIncludedBoundOperation);
         int answer;
         final var sum = 1;
