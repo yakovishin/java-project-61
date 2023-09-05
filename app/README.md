@@ -7,3 +7,5 @@
 <a href="https://asciinema.org/a/gBov484MYKwnvRMu3JmJL0QCW"> asciinema GCD</a>
 <br>
 <a href="https://asciinema.org/a/NNak8Z8IYaqiYT6yUmLmmiNyY"> asciinema Progression</a>
+<br>
+<a href="https://asciinema.org/a/46vJr8Hqrt1aTaIzfnQcvBvQP"> asciinema Prime</a>
