@@ -16,20 +16,26 @@ public class Calc {
     }
 
     private static boolean isCalc() {
-        var firstNumber = RANDOM.nextInt(10);
-        var secondNumber = RANDOM.nextInt(10);
-        var operation = RANDOM.nextInt(1, 4);  // Operation bound from 1 to 3
+        var boundOfRandomNumber = 10;
+        var firstNumber = RANDOM.nextInt(boundOfRandomNumber);
+        var secondNumber = RANDOM.nextInt(boundOfRandomNumber);
+        var leastBoundOperation = 1;
+        var highNotIncludedBoundOperation = 4;
+        var operation = RANDOM.nextInt(leastBoundOperation, highNotIncludedBoundOperation);
         int answer;
+        final var sum = 1;
+        final var sub = 2;
+        final var mul = 3;
         switch (operation) {
-            case 1 -> {
+            case sum -> {
                 answer = firstNumber + secondNumber;
                 return game(String.valueOf(answer), firstNumber + " + " + secondNumber);
             }
-            case 2 -> {
+            case sub -> {
                 answer = firstNumber - secondNumber;
                 return game(String.valueOf(answer), firstNumber + " - " + secondNumber);
             }
-            case 3 -> {
+            case mul -> {
                 answer = firstNumber * secondNumber;
                 return game(String.valueOf(answer), firstNumber + " * " + secondNumber);
             }

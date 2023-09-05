@@ -16,8 +16,9 @@ public class Gcd {
     }
 
     private static boolean isGcd() {
-        var firstNumber = RANDOM.nextInt(100);
-        var secondNumber = RANDOM.nextInt(100);
+        final var highBound = 100;
+        var firstNumber = RANDOM.nextInt(highBound);
+        var secondNumber = RANDOM.nextInt(highBound);
         var rightAnswer = 0;
         var min = Math.min(firstNumber, secondNumber);
         for (int i = min; i > 0; i--) {

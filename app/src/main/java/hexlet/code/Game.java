@@ -11,7 +11,8 @@ import static hexlet.code.StringUtils.USER_ANSWER;
 
 public class Game {
 
-    public static int  winCount = 0;
+    private static int  winCount = 0;
+    private static final int END_WIN_COUNT = 3;
 
     public static boolean game(String rightAnswer, String expression) {
         Predicate<String> predicate = userAnswer -> userAnswer.equals(rightAnswer);
@@ -31,7 +32,7 @@ public class Game {
         }
         System.out.println(CORRECT);
         winCount++;
-        if (winCount == 3) {
+        if (winCount == END_WIN_COUNT) {
             System.out.printf(PATTERN_CONGRATULATION, Cli.getName());
             return false;
         }

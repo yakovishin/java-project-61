@@ -24,20 +24,25 @@ public class Engine {
             System.out.println("Welcome to the Brain Games!");
             Cli.setName();
         }
+        final var secondGame = 2;
+        final var thirdGame = 3;
+        final var fourthGame = 4;
+        final var fifthGame = 5;
+        final var sixthGame = 6;
         switch (choice) {
-            case 2 -> {
+            case secondGame -> {
                 Even.playEvenNumber();
             }
-            case 3 -> {
+            case thirdGame -> {
                 Calc.playCalc();
             }
-            case 4 -> {
+            case fourthGame -> {
                 Gcd.playGcd();
             }
-            case 5 -> {
+            case fifthGame -> {
                 Progression.playProgression();
             }
-            case 6 -> {
+            case sixthGame -> {
                 Prime.playPrime();
             }
             default -> {

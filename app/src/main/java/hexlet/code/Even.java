@@ -17,7 +17,7 @@ public class Even {
         while (isPlaying(playing));
     }
     private static boolean isEvenNumber() {
-        var maxBound = 100;
+        final var maxBound = 100;
         var randomInt = RANDOM.nextInt(maxBound);
         var rightAnswer = randomInt % 2 == 0 ? YES : NO;
         return game(rightAnswer, String.valueOf(randomInt));

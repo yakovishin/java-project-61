@@ -14,8 +14,10 @@ public class Progression {
 
     private static boolean isProgression() {
         final var lengthOfProgression = 10;
-        var number = RANDOM.nextInt(1, 20);
-        var step = RANDOM.nextInt(1, 5);
+        final var highBoundOfNum = 20;
+        final var highBoundOfStep = 5;
+        var number = RANDOM.nextInt(1, highBoundOfNum);
+        var step = RANDOM.nextInt(1, highBoundOfStep);
         var hide = RANDOM.nextInt(1, lengthOfProgression);
         var rightAnswer = 0;
         StringBuilder stringBuilder = new StringBuilder();
@@ -27,7 +29,7 @@ public class Progression {
                 stringBuilder.append(number);
             }
             number += step;
-            if (i != 10) {
+            if (i != lengthOfProgression) {
                 stringBuilder.append(" ");
             }
         }
